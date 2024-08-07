@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Gupter:wght@400;500;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 200vh;
+    background: linear-gradient( #153677, #4e085f);
+    padding: 10px;
+}
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+.todo-box{
+    width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    padding-left: 20px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-weight: 14px;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+ul li{
+    position: relative;
+    list-style: none;
+    font-size: 17px;
+    padding: 13px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-image: url('data:image/png;base64,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');
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url('https://w7.pngwing.com/pngs/888/702/png-transparent-check-mark-computer-icons-a-text-trademark-orange-thumbnail.png');
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+ul li span:hover{
+    background: #ff5945;
+    color: white;
+}
+
+@media  (max-width:500px) {
+    .todo-box{
+        width: auto;
+    }
+}
