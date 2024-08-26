@@ -122,8 +122,7 @@ main .bg-color{
     position: absolute;
     width: 600px;
     height: 600px;
-    /*background: linear-gradient(#835DC2,#2077D1,#008D97);
-    */top: 10px;
+    top: 10px;
     left: 33%;
     z-index: -999;
     border-radius: 50%;

@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    place-content: center;
+    padding-left: 100px;
+    background: url('./img/background.png');
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: 100%;
+    position: relative;
+    color: white;
+}
+
+.color{
+    position:absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    background-color: #0000006d;
+    background: blur(10px);
+    left: 0;
+    z-index: -999;
+}
+
+.container{
+   width: 500px;
+   height: 500px;
+   margin: auto;
+   z-index: 999;
+   color: white;
+}
+
+span{
+    font-size: 40px;
+}
+h2{
+    font-size: 60px;
+    margin-top: 20px;
+}
+p{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.input-box{
+    width: 400px;
+    height: 50px;
+    display: flex;
+}
+
+input{
+    flex: 1;
+    border: 1px solid #000000;
+    padding: 10px;
+    font-size: 20px;
+    border: 0;
+    outline: 0;
+}
+input::placeholder{
+    font-size: 15px;
+}
+
+button{
+    cursor: pointer;
+    width: 60px;
+    border: 0;
+    outline: 0;
+    background: greenyellow;
+    font-size: 20px;
+}
+
